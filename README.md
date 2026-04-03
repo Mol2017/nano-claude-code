@@ -53,7 +53,7 @@ agent.py       — while True agentic loop
 Requires Python 3.12+ and an Anthropic API key.
 
 ```bash
-git clone <repo>
+git clone https://github.com/Mol2017/nano-claude-code
 cd nano-claude-code
 
 # create a virtual environment
@@ -72,13 +72,13 @@ pip install -e .
 export ANTHROPIC_API_KEY="sk-ant-..."
 
 # default mode (prompts before bash/writes)
-.venv/bin/nano
+.venv/bin/nano-claude-code
 
 # skip all confirmation prompts
-.venv/bin/nano --dangerously-skip-permissions
+.venv/bin/nano-claude-code --dangerously-skip-permissions
 
 # read-only (no bash, no file writes)
-.venv/bin/nano --readonly
+.venv/bin/nano-claude-code --readonly
 ```
 
 ## Tools
@@ -106,7 +106,7 @@ Write operations (`bash`, `write_file`, `edit_file`) require confirmation in the
 
 ## Memory (CLAUDE.md)
 
-On startup, nano walks up from the current directory collecting `CLAUDE.md` files and injects them into the system prompt. Create one in your project root to give Claude persistent context:
+On startup, nano-claude-code walks up from the current directory collecting `CLAUDE.md` files and injects them into the system prompt. Create one in your project root to give Claude persistent context:
 
 ```markdown
 # My Project

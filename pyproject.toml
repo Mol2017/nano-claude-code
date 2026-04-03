@@ -8,7 +8,7 @@ dependencies = [
 ]
 
 [project.scripts]
-nano = "nano.main:main"
+nano-claude-code = "nano.main:main"
 
 [build-system]
 requires = ["hatchling"]
