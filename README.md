@@ -74,11 +74,15 @@ export ANTHROPIC_API_KEY="sk-ant-..."
 # default mode (prompts before bash/writes)
 .venv/bin/nano-claude-code
 
+# or source the venv and run directly
+source .venv/bin/activate
+nano-claude-code
+
 # skip all confirmation prompts
-.venv/bin/nano-claude-code --dangerously-skip-permissions
+nano-claude-code --dangerously-skip-permissions
 
 # read-only (no bash, no file writes)
-.venv/bin/nano-claude-code --readonly
+nano-claude-code --readonly
 ```
 
 ## Tools
